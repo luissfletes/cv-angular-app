@@ -1,0 +1,12 @@
+<mat-list role="list" fxLayout="row wrap" [fxLayoutGap]="itemGapPx">
+  <mat-list-item
+    *ngFor="let skill of skills"
+    [fxFlex]="columnSize"
+    fxLayout="row"
+    fxLayoutAlign="space-between"
+    role="listitem">
+    <span fxFlex="grow" *ngIf="skill.i18nTitle" [translate]="getSkilli18nTittle(skill)"></span>
+    <span fxFlex="grow" *ngIf="skill.title">{{ skill.title }}</span>
+    <mat-progress-bar fxFlex="grow" mode="determinate" [value]="skill.meter"></mat-progress-bar>
+  </mat-list-item>
+</mat-list>

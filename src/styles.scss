@@ -5,4 +5,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 app-main > mat-sidenav-container {
   min-height: 100vh;
+
+  mat-sidenav-content > .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+app-skill-set {
+  mat-list > mat-list-item {
+    .mat-list-item-content {
+      width: 100%;
+    }
+  }
 }

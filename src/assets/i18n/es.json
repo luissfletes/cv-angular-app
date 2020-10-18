@@ -1,0 +1,9 @@
+{
+  "SkillSetGroupsTitles": {
+    "ProfessionalSkills": "Habilidades Profesionales"
+  },
+  "SkillNames": {
+    "Networking": "Redes y servidores",
+    "Security": "Seguridad"
+  }
+}

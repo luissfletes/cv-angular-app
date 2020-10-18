@@ -1,0 +1,28 @@
+{
+  "proAbilities": [
+    {
+      "title": "FrontEnd",
+      "meter": 95
+    },
+    {
+      "title": "BackEnd",
+      "meter": 85
+    },
+    {
+      "i18nTitle": "Networking",
+      "meter": 50
+    },
+    {
+      "title": "UX",
+      "meter": 80
+    },
+    {
+      "i18nTitle": "Security",
+      "meter": 80
+    },
+    {
+      "title": "Responsive Design",
+      "meter": 90
+    }
+  ]
+}
