@@ -12,20 +12,30 @@ import { JsonData, Skill } from '@shared/models';
 })
 export class MainComponent implements OnInit {
 
-  jsonData$: Observable<JsonData>;
+  skillsJsonData$: Observable<JsonData>;
   proSkills$: Observable<Skill[]>;
+  devTechs$: Observable<Skill[]>;
+  frameworksLibraries$: Observable<Skill[]>;
 
   constructor(
     private dataRetriever: DataRetrieverService
   ) { }
 
   ngOnInit(): void {
-    this.jsonData$ = this.dataRetriever.getJsonDataFile('skill-sets').pipe(
+    this.skillsJsonData$ = this.dataRetriever.getJsonDataFile('skill-sets').pipe(
       shareReplay(1)
     );
 
-    this.proSkills$ = this.jsonData$.pipe(
+    this.proSkills$ = this.skillsJsonData$.pipe(
       map(jsonData => jsonData.proAbilities)
+    );
+
+    this.devTechs$ = this.skillsJsonData$.pipe(
+      map(jsonData => jsonData.devTechs)
+    );
+
+    this.frameworksLibraries$ = this.skillsJsonData$.pipe(
+      map(jsonData => jsonData.frameworksLibraries)
     );
   }
 

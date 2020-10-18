@@ -24,5 +24,117 @@
       "title": "Responsive Design",
       "meter": 90
     }
+  ],
+  "devTechs": [
+    {
+      "title": "HTML",
+      "meter": 90
+    },
+    {
+      "title": "CSS",
+      "meter": 95
+    },
+    {
+      "title": "Javascript",
+      "meter": 95
+    },
+    {
+      "title": "NodeJS",
+      "meter": 85
+    },
+    {
+      "title": "PHP",
+      "meter": 70
+    },
+    {
+      "title": "Java",
+      "meter": 60
+    },
+    {
+      "title": "C#",
+      "meter": 45
+    },
+    {
+      "title": "MongoDB",
+      "meter": 85
+    },
+    {
+      "title":"SQL Server",
+      "meter": 60
+    },
+    {
+      "title":"MySQL",
+      "meter": 75
+    },
+    {
+      "title":"PostreSQL",
+      "meter": 50
+    },
+    {
+      "title":"Git",
+      "meter": 85
+    },
+    {
+      "title":"NPM",
+      "meter": 85
+    },
+    {
+      "title":"Bower",
+      "meter": 90
+    },
+    {
+      "title":"LESS",
+      "meter": 80
+    },
+    {
+      "title":"Gulp",
+      "meter": 70
+    }
+  ],
+  "frameworksLibraries": [
+    {
+      "title": "AngularJS",
+      "meter": 90
+    },
+    {
+      "title": "Bootstrap",
+      "meter": 95
+    },
+    {
+      "title": "JQuery",
+      "meter": 85
+    },
+    {
+      "title": "ReactJS",
+      "meter": 50
+    },
+    {
+      "title": "ExpressJS",
+      "meter": 90
+    },
+    {
+      "title": "Socket IO",
+      "meter": 80
+    },
+    {
+      "title": "MEAN IO",
+      "meter": 85
+    },
+    {
+      "title": "Mongoose",
+      "meter": 80
+    },
+    {
+      "title": "ASP.NET MVC",
+      "meter": 75
+    },
+    {
+      "title": "Sails JS",
+      "meter": 90
+    },
+    {
+      "title": "PureCSS",
+      "meter": 75
+    }
   ]
 }

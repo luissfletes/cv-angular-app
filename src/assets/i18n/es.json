@@ -1,6 +1,8 @@
 {
   "SkillSetGroupsTitles": {
-    "ProfessionalSkills": "Habilidades Profesionales"
+    "ProfessionalSkills": "Habilidades Profesionales",
+    "DevelopmentTechs": "Tecnologías de desarrollo",
+    "FrameworksLibraries": "Frameworks y librerias"
   },
   "SkillNames": {
     "Networking": "Redes y servidores",
