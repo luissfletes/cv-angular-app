@@ -3,7 +3,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <div class="page-wrapper">
+    <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px">
       <div
         class="skills"
         *ngIf="skillsJsonData$ | async"
@@ -31,6 +31,28 @@
           </mat-card-header>
           <mat-card-content>
             <app-skill-set [skills]="frameworksLibraries$ | async"></app-skill-set>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div
+        class="events"
+        *ngIf="eventsJsonData$ | async"
+        fxLayout="row"
+        fxLayoutGap="20px">
+        <mat-card fxFlex="grow">
+          <mat-card-header>
+            <mat-card-title translate="EventSetGroupsTitles.WorkExperience"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <app-event-set [events]="workExperienceEvents$ | async"></app-event-set>
+          </mat-card-content>
+        </mat-card>
+        <mat-card fxFlex="grow">
+          <mat-card-header>
+            <mat-card-title translate="EventSetGroupsTitles.Education"></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <app-event-set [events]="educationEvents$ | async"></app-event-set>
           </mat-card-content>
         </mat-card>
       </div>

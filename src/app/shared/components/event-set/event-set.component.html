@@ -1,0 +1,18 @@
+<mat-list role="list">
+  <mat-list-item
+    *ngFor="let event of events"
+    fxLayout="row"
+    fxLayoutAlign="space-between"
+    role="listitem">
+    <ng-container [ngSwitch]="!!event.title">
+      <span *ngSwitchCase="true" fxFlex="grow">{{ event.title }}</span>
+      <span *ngSwitchCase="false" fxFlex="grow" [translate]="getEventi18nTittle(event)"></span>
+    </ng-container>
+    <div class="mat-caption" fxFlex="grow">
+      <span [style.display]="'block'">{{ event.location }}</span>
+      <span>{{ event.duration.start | date:getEventDateFormat(event) }}</span>
+      <span *ngIf="event.duration.end">{{ event.duration.end | date:getEventDateFormat(event) }}</span>
+      <span *ngIf="event.duration.stillAt" translate="GeneralLabels.Present"></span>
+    </div>
+  </mat-list-item>
+</mat-list>

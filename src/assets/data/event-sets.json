@@ -1,0 +1,46 @@
+{
+  "workExperienceEvents": [
+    {
+      "i18nTitle": "TechnicalSupport",
+      "location": "Concesionaria de Ediciones S.A",
+      "duration": {
+        "start": "2014-06-01"
+      }
+    },
+    {
+      "title": "Web Developer",
+      "location": "Nestrix Corporation",
+      "duration": {
+        "start": "2014-08-01",
+        "end": "2018-03-01"
+      }
+    }
+  ],
+  "educationEvents": [
+    {
+      "i18nTitle": "Graduate",
+      "location": "Instituto Pedagógico La Salle",
+      "duration": {
+        "start": "1999-01-01",
+        "end": "2010-11-01",
+        "dateFormat": "y"
+      }
+    },
+    {
+      "i18nTitle": "SystemEngineer",
+      "location": "Universidad Centroamericana",
+      "duration": {
+        "start": "2011-01-01",
+        "end": "2015-11-01",
+        "dateFormat": "y"
+      }
+    },
+    {
+      "i18nTitle": "Course",
+      "location": "Universidad Centroamericana",
+      "duration": {
+        "start": "2014-04-01"
+      }
+    }
+  ]
+}

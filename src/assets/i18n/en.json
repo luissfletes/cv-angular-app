@@ -1,9 +1,24 @@
 {
   "SkillSetGroupsTitles": {
-    "ProfessionalSkills": "Pro Skills"
+    "ProfessionalSkills": "Pro Skills",
+    "DevelopmentTechs": "Development Technologies",
+    "FrameworksLibraries": "Frameworks and libraries"
+  },
+  "EventSetGroupsTitles": {
+    "WorkExperience": "Work Experience",
+    "Education": "Educación"
   },
   "SkillNames": {
     "Networking": "Networking",
     "Security": "Security"
+  },
+  "EventNames": {
+    "TechnicalSupport": "Technical Support",
+    "Graduate": "Graduate",
+    "Course": "Course",
+    "SystemEngineer": "Systems Engineer"
+  },
+  "GeneralLabels": {
+    "Present": "Present"
   }
 }

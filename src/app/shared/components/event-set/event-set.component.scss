@@ -1,0 +1,13 @@
+div.mat-caption > span {
+  &:after {
+    display: inline-block;
+    margin: 0px 5px;
+    content: '-';
+  }
+
+  &:first-child:after,
+  &:last-child:after {
+    content: none;
+  }
+
+}

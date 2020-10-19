@@ -4,8 +4,21 @@
     "DevelopmentTechs": "Tecnologías de desarrollo",
     "FrameworksLibraries": "Frameworks y librerias"
   },
+  "EventSetGroupsTitles": {
+    "WorkExperience": "Experiencia Laboral",
+    "Education": "Educación"
+  },
   "SkillNames": {
     "Networking": "Redes y servidores",
     "Security": "Seguridad"
+  },
+  "EventNames": {
+    "TechnicalSupport": "Soporte Técnico",
+    "Graduate": "Bachiller",
+    "Course": "Curso",
+    "SystemEngineer": "Ing. en Sistemas y Tecnologías de la Información"
+  },
+  "GeneralLabels": {
+    "Present": "Actualidad"
   }
 }

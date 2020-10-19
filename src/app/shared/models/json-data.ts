@@ -1,7 +1,13 @@
 import { Skill } from './skill';
+import { Event } from './event';
 
-export interface JsonData {
+export interface SkillsJsonData {
   proAbilities: Skill[];
   devTechs: Skill[];
   frameworksLibraries: Skill[];
+}
+
+export interface EventsJsonData {
+  workExperienceEvents: Event[];
+  educationEvents: Event[];
 }

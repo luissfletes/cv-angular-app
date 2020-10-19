@@ -4,11 +4,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
-import { SkillSetComponent } from './components';
+import {
+  SkillSetComponent,
+  EventSetComponent,
+} from './components';
 
 
 const components = [
-  SkillSetComponent
+  SkillSetComponent,
+  EventSetComponent,
 ];
 
 const depModules = [
@@ -21,7 +25,7 @@ const depModules = [
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
     ...depModules
