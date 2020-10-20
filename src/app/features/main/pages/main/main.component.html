@@ -4,58 +4,8 @@
 
   <mat-sidenav-content>
     <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px">
-      <div
-        class="skills"
-        *ngIf="skillsJsonData$ | async"
-        fxLayout="column"
-        fxLayoutGap="20px">
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title translate="SkillSetGroupsTitles.ProfessionalSkills"></mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <app-skill-set [skills]="proSkills$ | async"></app-skill-set>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title translate="SkillSetGroupsTitles.DevelopmentTechs"></mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <app-skill-set [skills]="devTechs$ | async"></app-skill-set>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title translate="SkillSetGroupsTitles.FrameworksLibraries"></mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <app-skill-set [skills]="frameworksLibraries$ | async"></app-skill-set>
-          </mat-card-content>
-        </mat-card>
-      </div>
-      <div
-        class="events"
-        *ngIf="eventsJsonData$ | async"
-        fxLayout="row"
-        fxLayoutGap="20px">
-        <mat-card fxFlex="grow">
-          <mat-card-header>
-            <mat-card-title translate="EventSetGroupsTitles.WorkExperience"></mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <app-event-set [events]="workExperienceEvents$ | async"></app-event-set>
-          </mat-card-content>
-        </mat-card>
-        <mat-card fxFlex="grow">
-          <mat-card-header>
-            <mat-card-title translate="EventSetGroupsTitles.Education"></mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <app-event-set [events]="educationEvents$ | async"></app-event-set>
-          </mat-card-content>
-        </mat-card>
-      </div>
+      <app-skills-container [skillsData]="skillsJsonData$ | async"></app-skills-container>
+      <app-events-container [eventsData]="eventsJsonData$ | async"></app-events-container>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -2,7 +2,7 @@ import { Skill } from './skill';
 import { Event } from './event';
 
 export interface SkillsJsonData {
-  proAbilities: Skill[];
+  proSkills: Skill[];
   devTechs: Skill[];
   frameworksLibraries: Skill[];
 }

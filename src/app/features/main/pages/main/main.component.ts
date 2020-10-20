@@ -15,13 +15,6 @@ export class MainComponent implements OnInit {
   skillsJsonData$: Observable<SkillsJsonData>;
   eventsJsonData$: Observable<EventsJsonData>;
 
-  proSkills$: Observable<Skill[]>;
-  devTechs$: Observable<Skill[]>;
-  frameworksLibraries$: Observable<Skill[]>;
-
-  workExperienceEvents$: Observable<Event[]>;
-  educationEvents$: Observable<Event[]>;
-
   constructor(
     private dataRetriever: DataRetrieverService
   ) { }
@@ -34,29 +27,6 @@ export class MainComponent implements OnInit {
     this.eventsJsonData$ = this.dataRetriever.getJsonDataFile<EventsJsonData>('event-sets').pipe(
       shareReplay(1)
     );
-
-
-    this.proSkills$ = this.skillsJsonData$.pipe(
-      map(jsonData => jsonData.proAbilities)
-    );
-
-    this.devTechs$ = this.skillsJsonData$.pipe(
-      map(jsonData => jsonData.devTechs)
-    );
-
-    this.frameworksLibraries$ = this.skillsJsonData$.pipe(
-      map(jsonData => jsonData.frameworksLibraries)
-    );
-
-    this.workExperienceEvents$ = this.eventsJsonData$.pipe(
-      map(jsonData => jsonData.workExperienceEvents)
-    );
-
-    this.educationEvents$ = this.eventsJsonData$.pipe(
-      map(jsonData => jsonData.educationEvents)
-    );
-
-
   }
 
 }

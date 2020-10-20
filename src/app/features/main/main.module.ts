@@ -6,6 +6,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from '@shared/shared.module';
 import { MainComponent } from './pages';
+import { EventsContainerComponent, SkillsContainerComponent } from './components';
 
 
 
@@ -15,6 +16,8 @@ const pageComponents = [
 
 const components = [
   ...pageComponents,
+  SkillsContainerComponent,
+  EventsContainerComponent,
 ];
 
 const depModules = [
@@ -29,13 +32,13 @@ const depModules = [
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
-    ...depModules
+    ...depModules,
   ],
   exports: [
-    ...components
+    ...components,
   ]
 })
 export class MainModule { }
