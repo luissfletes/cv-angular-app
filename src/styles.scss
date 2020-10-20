@@ -6,10 +6,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 app-main > mat-sidenav-container {
   min-height: 100vh;
 
+  mat-sidenav {
+    max-width: 400px;
+    min-width: 200px;
+  }
+
   mat-sidenav-content > .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 40px 0px;
+    max-width: 1200px;
   }
 }
 

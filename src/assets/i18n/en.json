@@ -8,6 +8,15 @@
     "WorkExperience": "Work Experience",
     "Education": "Educación"
   },
+  "SideContentTitles": {
+    "Profile": "Profile",
+    "SoftSkills": "Soft Skills",
+    "Languages": "Languages",
+    "Contact": "Contact"
+  },
+  "SideContent": {
+    "ProfileParagraph": "Persistent, perceptive, persevering, effective and efficient, self-taught, curious and always hungry to learn."
+  },
   "SkillNames": {
     "Networking": "Networking",
     "Security": "Security"

@@ -1,9 +1,9 @@
 <mat-sidenav-container autosize hasBackdrop="false">
-  <mat-sidenav mode="push" opened>
+  <mat-sidenav mode="push" fixedInViewport opened>
+    <app-side-content-container></app-side-content-container>
   </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px">
+  <mat-sidenav-content fxLayoutAlign="center" fxLayout="row" [style.marginRight.px]="0">
+    <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center">
       <app-skills-container [skillsData]="skillsJsonData$ | async"></app-skills-container>
       <app-events-container [eventsData]="eventsJsonData$ | async"></app-events-container>
     </div>

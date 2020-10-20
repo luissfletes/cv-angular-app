@@ -6,7 +6,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from '@shared/shared.module';
 import { MainComponent } from './pages';
-import { EventsContainerComponent, SkillsContainerComponent } from './components';
+import {
+  EventsContainerComponent,
+  SkillsContainerComponent,
+  SideContentContainerComponent,
+} from './components';
 
 
 
@@ -18,6 +22,7 @@ const components = [
   ...pageComponents,
   SkillsContainerComponent,
   EventsContainerComponent,
+  SideContentContainerComponent,
 ];
 
 const depModules = [
