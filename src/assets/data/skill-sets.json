@@ -39,40 +39,28 @@
       "meter": 95
     },
     {
+      "title": "Typescript",
+      "meter": 90
+    },
+    {
       "title": "NodeJS",
       "meter": 85
     },
     {
       "title": "PHP",
-      "meter": 70
-    },
-    {
-      "title": "Java",
-      "meter": 60
-    },
-    {
-      "title": "C#",
-      "meter": 45
-    },
-    {
-      "title": "MongoDB",
-      "meter": 85
-    },
-    {
-      "title":"SQL Server",
-      "meter": 60
-    },
-    {
-      "title":"MySQL",
-      "meter": 75
-    },
-    {
-      "title":"PostreSQL",
       "meter": 50
     },
     {
+      "title": "Java",
+      "meter": 50
+    },
+    {
+      "title": "C#",
+      "meter": 80
+    },
+    {
       "title":"Git",
-      "meter": 85
+      "meter": 90
     },
     {
       "title":"NPM",
@@ -80,25 +68,79 @@
     },
     {
       "title":"Bower",
-      "meter": 90
-    },
-    {
-      "title":"LESS",
       "meter": 80
     },
     {
-      "title":"Gulp",
+      "title":"LESS",
       "meter": 70
+    },
+    {
+      "title": "SASS",
+      "meter": 70
+    },
+    {
+      "title": "Scrum",
+      "meter": 80
+    },
+    {
+      "title": "Kanban",
+      "meter": 50
+    }
+  ],
+  "dbs": [
+    {
+      "title": "MongoDB",
+      "meter": 85
+    },
+    {
+      "title": "SQL Server",
+      "meter": 85
+    },
+    {
+      "title": "MySQL",
+      "meter": 75
+    },
+    {
+      "title": "PostreSQL",
+      "meter": 65
+    },
+    {
+      "title": "CouchDB",
+      "meter": 50
     }
   ],
   "frameworksLibraries": [
     {
-      "title": "AngularJS",
+      "title": "Angular",
       "meter": 90
     },
     {
-      "title": "Bootstrap",
+      "title": "Angular Material",
+      "meter": 80
+    },
+    {
+      "title": "NGRX",
+      "meter": 90
+    },
+    {
+      "title": "Angular Flex Layout",
+      "meter": 70
+    },
+    {
+      "title": "AngularJS",
+      "meter": 85
+    },
+    {
+      "title": "Bootstrap 2/3",
       "meter": 95
+    },
+    {
+      "title": "Firebase",
+      "meter": 60
+    },
+    {
+      "title": "Electron",
+      "meter": 50
     },
     {
       "title": "JQuery",
@@ -117,7 +159,7 @@
       "meter": 80
     },
     {
-      "title": "MEAN IO",
+      "title": "MEAN",
       "meter": 85
     },
     {
@@ -125,8 +167,20 @@
       "meter": 80
     },
     {
-      "title": "ASP.NET MVC",
-      "meter": 75
+      "title": "ASP.NET MVC 5",
+      "meter": 80
+    },
+    {
+      "title": "ASP.NET Core MVC 2/3",
+      "meter": 70
+    },
+    {
+      "title": "Dapper",
+      "meter": 70
+    },
+    {
+      "title": "Entity Framework",
+      "meter": 70
     },
     {
       "title": "Sails JS",

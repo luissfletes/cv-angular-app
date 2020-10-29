@@ -4,6 +4,7 @@ import { Event } from './event';
 export interface SkillsJsonData {
   proSkills: Skill[];
   devTechs: Skill[];
+  dbs: Skill[];
   frameworksLibraries: Skill[];
 }
 

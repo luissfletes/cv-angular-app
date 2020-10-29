@@ -20,6 +20,10 @@ export class SkillsContainerComponent {
     return this.skillsData?.devTechs || [];
   }
 
+  get dbs(): Skill[] {
+    return this.skillsData?.dbs || [];
+  }
+
   get frameworksLibraries(): Skill[] {
     return this.skillsData?.frameworksLibraries || [];
   }
