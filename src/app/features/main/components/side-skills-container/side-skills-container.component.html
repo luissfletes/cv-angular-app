@@ -1,0 +1,18 @@
+<div fxLayout="column" fxLayoutGap="20px">
+  <mat-card class="mat-elevation-z0">
+    <mat-card-header>
+      <mat-card-title translate="SideContentTitles.SoftSkills"></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-skill-set [skills]="softSkills" columns="1" itemGap="0"></app-skill-set>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="mat-elevation-z0">
+    <mat-card-header>
+      <mat-card-title translate="SideContentTitles.Languages"></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-skill-set [skills]="languages" columns="1" itemGap="0"></app-skill-set>
+    </mat-card-content>
+  </mat-card>
+</div>

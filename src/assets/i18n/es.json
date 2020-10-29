@@ -19,7 +19,15 @@
   },
   "SkillNames": {
     "Networking": "Redes y servidores",
-    "Security": "Seguridad"
+    "Security": "Seguridad",
+    "Leadership": "Liderazgo",
+    "Creativity": "Creatividad",
+    "TeamWork": "Trabajo en Equipo",
+    "UnderPressureWork": "Trabajo bajo presión",
+    "Speech": "Oratoria",
+    "Spanish": "Español",
+    "English": "Inglés",
+    "Italian": "Italiano"
   },
   "EventNames": {
     "TechnicalSupport": "Soporte Técnico",
@@ -29,5 +37,10 @@
   },
   "GeneralLabels": {
     "Present": "Actualidad"
+  },
+  "ContactLabels": {
+    "CallMe": "Llamar",
+    "SMS": "Enviar SMS",
+    "WhatsApp": "Enviar Mensaje Whatsapp"
   }
 }

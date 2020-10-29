@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
 import { DataRetrieverService } from '@core/services';
-import { SkillsJsonData, Skill, EventsJsonData, Event } from '@shared/models';
+import {
+  SkillsJsonData,
+  EventsJsonData,
+  SideSkillsJsonData,
+  ContactJsonData,
+} from '@shared/models';
 
 
 @Component({
@@ -14,19 +18,18 @@ export class MainComponent implements OnInit {
 
   skillsJsonData$: Observable<SkillsJsonData>;
   eventsJsonData$: Observable<EventsJsonData>;
+  sideSkillsJsonData$: Observable<SideSkillsJsonData>;
+  contactJsonData$: Observable<ContactJsonData>;
 
   constructor(
     private dataRetriever: DataRetrieverService
   ) { }
 
   ngOnInit(): void {
-    this.skillsJsonData$ = this.dataRetriever.getJsonDataFile<SkillsJsonData>('skill-sets').pipe(
-      shareReplay(1)
-    );
-
-    this.eventsJsonData$ = this.dataRetriever.getJsonDataFile<EventsJsonData>('event-sets').pipe(
-      shareReplay(1)
-    );
+    this.skillsJsonData$ = this.dataRetriever.getJsonDataFile<SkillsJsonData>('skill-sets');
+    this.eventsJsonData$ = this.dataRetriever.getJsonDataFile<EventsJsonData>('event-sets');
+    this.sideSkillsJsonData$ = this.dataRetriever.getJsonDataFile<SideSkillsJsonData>('side-skills-sets');
+    this.contactJsonData$ = this.dataRetriever.getJsonDataFile<ContactJsonData>('contact');
   }
 
 }

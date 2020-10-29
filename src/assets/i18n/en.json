@@ -19,7 +19,15 @@
   },
   "SkillNames": {
     "Networking": "Networking",
-    "Security": "Security"
+    "Security": "Security",
+    "Leadership": "Leadership",
+    "Creativity": "Creativity",
+    "TeamWork": "Team Work",
+    "UnderPressureWork": "Under Pressure Work",
+    "Speech": "Speech",
+    "Spanish": "Spanish",
+    "English": "English",
+    "Italian": "Italian"
   },
   "EventNames": {
     "TechnicalSupport": "Technical Support",
@@ -29,5 +37,10 @@
   },
   "GeneralLabels": {
     "Present": "Present"
+  },
+  "ContactLabels": {
+    "CallMe": "Call",
+    "SMS": "Send SMS",
+    "WhatsApp": "Send Whatsapp Message"
   }
 }

@@ -11,3 +11,13 @@ export interface EventsJsonData {
   workExperienceEvents: Event[];
   educationEvents: Event[];
 }
+
+export interface SideSkillsJsonData {
+  softSkills: Skill[];
+  languages: Skill[];
+}
+
+export interface ContactJsonData {
+  phone: string;
+  email: string;
+}

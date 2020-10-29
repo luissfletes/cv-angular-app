@@ -1,0 +1,26 @@
+<mat-card class="mat-elevation-z0">
+  <mat-card-header>
+    <!-- <mat-icon mat-card-avatar>person</mat-icon> TODO -->
+    <mat-card-title translate="SideContentTitles.Contact"></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list role="list">
+      <mat-list-item>
+        <mat-icon matListIcon>phone</mat-icon>
+        <button mat-raised-button [matMenuTriggerFor]="phoneMenu">
+          {{ phone }}
+        </button>
+        <mat-menu #phoneMenu="matMenu">
+          <a href="tel:{{phone}}" mat-menu-item>{{ 'ContactLabels.CallMe' | translate }}</a>
+          <a href="sms:{{phone}}" mat-menu-item>{{ 'ContactLabels.SMS' | translate }}</a>
+          <a href="https://api.whatsapp.com/send?phone={{phone}}" mat-menu-item target="_blank">{{ 'ContactLabels.WhatsApp' | translate }}</a>
+        </mat-menu>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>email</mat-icon>
+        <a href="mailto:{{email}}">{{ email }}</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+

@@ -1,6 +1,8 @@
 <mat-sidenav-container autosize hasBackdrop="false">
   <mat-sidenav mode="push" fixedInViewport opened>
-    <app-side-content-container></app-side-content-container>
+    <app-profile-container></app-profile-container>
+    <app-side-skills-container [sideSkillsData]="sideSkillsJsonData$ | async"></app-side-skills-container>
+    <app-contact-info-container [contactData]="contactJsonData$ | async"></app-contact-info-container>
   </mat-sidenav>
   <mat-sidenav-content fxLayoutAlign="center" fxLayout="row" [style.marginRight.px]="0">
     <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center">
