@@ -15,6 +15,12 @@ app-main > mat-sidenav-container {
     padding: 40px 0px;
     max-width: 1200px;
   }
+
+  button.language-fab {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
 }
 
 app-skill-set,

@@ -9,5 +9,8 @@
       <app-skills-container [skillsData]="skillsJsonData$ | async"></app-skills-container>
       <app-events-container [eventsData]="eventsJsonData$ | async"></app-events-container>
     </div>
+    <button class="language-fab" mat-fab color="primary" (click)="changeLanguage()">
+      <mat-icon>language</mat-icon>
+    </button>
   </mat-sidenav-content>
 </mat-sidenav-container>

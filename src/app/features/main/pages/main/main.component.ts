@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { DataRetrieverService } from '@core/services';
+import { DataRetrieverService, TranslationSwitchService } from '@core/services';
 import {
   SkillsJsonData,
   EventsJsonData,
@@ -22,7 +22,8 @@ export class MainComponent implements OnInit {
   contactJsonData$: Observable<ContactJsonData>;
 
   constructor(
-    private dataRetriever: DataRetrieverService
+    private dataRetriever: DataRetrieverService,
+    private translationSwitch: TranslationSwitchService,
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +31,10 @@ export class MainComponent implements OnInit {
     this.eventsJsonData$ = this.dataRetriever.getJsonDataFile<EventsJsonData>('event-sets');
     this.sideSkillsJsonData$ = this.dataRetriever.getJsonDataFile<SideSkillsJsonData>('side-skills-sets');
     this.contactJsonData$ = this.dataRetriever.getJsonDataFile<ContactJsonData>('contact');
+  }
+
+  changeLanguage(): void {
+    this.translationSwitch.switch();
   }
 
 }
