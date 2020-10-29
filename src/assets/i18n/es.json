@@ -1,4 +1,9 @@
 {
+  "ProfileValues": {
+    "ImgAlt": "Foto de perfil de Luis Fletes en Hobbitenango, Guatemala",
+    "Name": "Luis Fletes",
+    "Role": "Desarrollador Web"
+  },
   "SkillSetGroupsTitles": {
     "ProfessionalSkills": "Habilidades Profesionales",
     "DevelopmentTechs": "Tecnologías de desarrollo",
