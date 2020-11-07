@@ -7,8 +7,8 @@
   <mat-sidenav-content fxLayoutAlign="center" fxLayout="column" [style.marginRight.px]="0">
     <app-toolbar-container (menuToggle)="sidenav.toggle()" (share)="share()"></app-toolbar-container>
     <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxFlexAlign="center">
-      <app-skills-container [skillsData]="skillsJsonData$ | async"></app-skills-container>
-      <app-events-container [eventsData]="eventsJsonData$ | async"></app-events-container>
+      <app-skills-container [skillsData]="skillsJsonData$ | async" [onMobile]="onMobile"></app-skills-container>
+      <app-events-container [eventsData]="eventsJsonData$ | async" [onMobile]="onMobile"></app-events-container>
     </div>
     <button class="language-fab" mat-fab color="primary" (click)="changeLanguage()">
       <mat-icon>language</mat-icon>

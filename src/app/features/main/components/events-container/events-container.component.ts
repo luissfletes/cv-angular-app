@@ -12,6 +12,13 @@ export class EventsContainerComponent {
   @Input()
   eventsData: EventsJsonData;
 
+  @Input()
+  onMobile = false;
+
+  get layout(): string {
+    return this.onMobile ? 'column': 'row';
+  }
+
   get workExperienceEvents(): Event[] {
     return this.eventsData?.workExperienceEvents || [];
   }

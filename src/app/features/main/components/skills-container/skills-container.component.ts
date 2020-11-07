@@ -12,6 +12,13 @@ export class SkillsContainerComponent {
   @Input()
   skillsData: SkillsJsonData;
 
+  @Input()
+  onMobile = false;
+
+  get columns(): number {
+    return this.onMobile ? 1 : 3;
+  }
+
   get proSkills(): Skill[] {
     return this.skillsData?.proSkills || [];
   }
