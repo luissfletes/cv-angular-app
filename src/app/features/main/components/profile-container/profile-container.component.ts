@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-profile-container',
@@ -6,4 +6,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./profile-container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProfileContainerComponent {}
+export class ProfileContainerComponent {
+
+  @Input()
+  onMobile = false;
+
+  @Output()
+  menuToggle = new EventEmitter<void>();
+
+}

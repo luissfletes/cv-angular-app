@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="menuToggle.emit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div fxFlex="grow">
+    <span translate="ProfileValues.Name" [style.marginRight.px]="10"></span>
+    <span class="mat-caption" translate="ProfileValues.Role"></span>
+  </div>
+  <button mat-icon-button (click)="share.emit()">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>

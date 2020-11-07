@@ -1,5 +1,8 @@
 <mat-card>
   <mat-card-header>
+    <button *ngIf="onMobile" mat-card-avatar mat-icon-button (click)="menuToggle.emit()">
+      <mat-icon>menu</mat-icon>
+    </button>
     <mat-card-title translate="ProfileValues.Name"></mat-card-title>
     <mat-card-subtitle translate="ProfileValues.Role"></mat-card-subtitle>
   </mat-card-header>

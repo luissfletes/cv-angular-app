@@ -1,11 +1,12 @@
 <mat-sidenav-container autosize hasBackdrop="false">
-  <mat-sidenav mode="push" fixedInViewport opened>
-    <app-profile-container></app-profile-container>
+  <mat-sidenav #sidenav mode="push" fixedInViewport [opened]="!onMobile">
+    <app-profile-container (menuToggle)="sidenav.toggle()" [onMobile]="onMobile"></app-profile-container>
     <app-side-skills-container [sideSkillsData]="sideSkillsJsonData$ | async"></app-side-skills-container>
     <app-contact-info-container [contactData]="contactJsonData$ | async"></app-contact-info-container>
   </mat-sidenav>
-  <mat-sidenav-content fxLayoutAlign="center" fxLayout="row" [style.marginRight.px]="0">
-    <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center">
+  <mat-sidenav-content fxLayoutAlign="center" fxLayout="column" [style.marginRight.px]="0">
+    <app-toolbar-container (menuToggle)="sidenav.toggle()" (share)="share()"></app-toolbar-container>
+    <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxFlexAlign="center">
       <app-skills-container [skillsData]="skillsJsonData$ | async"></app-skills-container>
       <app-events-container [eventsData]="eventsJsonData$ | async"></app-events-container>
     </div>

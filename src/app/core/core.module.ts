@@ -1,10 +1,10 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
-import { HttpLoaderFactory, InitFactory } from './factories';
+import { HttpLoaderFactory, LanguageInitFactory, TitleInitFactory } from './factories';
 import { Languages } from './enums';
 
 
@@ -29,8 +29,14 @@ const exportedModules = [
 const providers = [
   {
     provide: APP_INITIALIZER,
-    useFactory: InitFactory,
+    useFactory: LanguageInitFactory,
     deps: [TranslateService],
+    multi: true,
+  },
+  {
+    provide: APP_INITIALIZER,
+    useFactory: TitleInitFactory,
+    deps: [Title, TranslateService],
     multi: true,
   }
 ]

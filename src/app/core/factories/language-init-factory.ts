@@ -1,7 +1,7 @@
 import { Languages } from '@core/enums';
 import { TranslateService } from '@ngx-translate/core';
 
-export function InitFactory(translate: TranslateService) {
+export function LanguageInitFactory(translate: TranslateService) {
   return () => {
     const language = navigator.language.split('-')[0];
     switch (language) {
