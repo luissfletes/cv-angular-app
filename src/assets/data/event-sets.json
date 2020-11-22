@@ -8,11 +8,35 @@
       }
     },
     {
-      "title": "Web Developer",
+      "title": "Fullstack Developer",
       "location": "Nestrix Corporation",
       "duration": {
         "start": "2014-08-01",
         "end": "2018-03-01"
+      }
+    },
+    {
+      "title": "Backend Developer",
+      "location": "RAIN Agency",
+      "duration": {
+        "start": "2018-03-01",
+        "end": "2018-09-01"
+      }
+    },
+    {
+      "title": "Frontend Developer",
+      "location": "OOQIA",
+      "duration": {
+        "start": "2018-09-01",
+        "end": "2019-03-01"
+      }
+    },
+    {
+      "title": "Fullstack developer",
+      "location": "Dotcreek",
+      "duration": {
+        "start": "2019-03-01",
+        "stillAt": true
       }
     }
   ],
