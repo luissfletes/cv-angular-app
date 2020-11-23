@@ -145,6 +145,13 @@
               "devServerTarget": "CV:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/cv-angular-app/",
+            "deployUrl": "/cv-angular-app/"
+          }
         }
       }
     }
