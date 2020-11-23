@@ -1,0 +1,53 @@
+{
+  "ProfileValues": {
+    "ImgAlt": "Foto de perfil de Luis Fletes en Hobbitenango, Guatemala",
+    "Name": "Luis Fletes",
+    "Role": "Desarrollador Web",
+    "ShareText": "Mira el currículum de Luis Fletes"
+  },
+  "SkillSetGroupsTitles": {
+    "ProfessionalSkills": "Habilidades Profesionales",
+    "DevelopmentTechs": "Tecnologías de desarrollo",
+    "Databases": "Bases de datos",
+    "FrameworksLibraries": "Frameworks y librerias"
+  },
+  "EventSetGroupsTitles": {
+    "WorkExperience": "Experiencia Laboral",
+    "Education": "Educación"
+  },
+  "SideContentTitles": {
+    "Profile": "Perfil",
+    "SoftSkills": "Habilidades Blandas",
+    "Languages": "Idiomas",
+    "Contact": "Contacto"
+  },
+  "SideContent": {
+    "ProfileParagraph": "Persistente, perspicaz, perseverante, eficaz y eficiente, autodidacta, curioso y siempre hambriento de aprender."
+  },
+  "SkillNames": {
+    "Networking": "Redes y servidores",
+    "Security": "Seguridad",
+    "Leadership": "Liderazgo",
+    "Creativity": "Creatividad",
+    "TeamWork": "Trabajo en Equipo",
+    "UnderPressureWork": "Trabajo bajo presión",
+    "Speech": "Oratoria",
+    "Spanish": "Español",
+    "English": "Inglés",
+    "Italian": "Italiano"
+  },
+  "EventNames": {
+    "TechnicalSupport": "Soporte Técnico",
+    "Graduate": "Bachiller",
+    "Course": "Curso",
+    "SystemEngineer": "Ing. en Sistemas y Tecnologías de la Información"
+  },
+  "GeneralLabels": {
+    "Present": "Actualidad"
+  },
+  "ContactLabels": {
+    "CallMe": "Llamar",
+    "SMS": "Enviar SMS",
+    "WhatsApp": "Enviar Mensaje Whatsapp"
+  }
+}

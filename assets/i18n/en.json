@@ -1,0 +1,53 @@
+{
+  "ProfileValues": {
+    "ImgAlt": "Luis Fletes' profile picture at Hobbitenango, Guatemala",
+    "Name": "Luis Fletes",
+    "Role": "Web Developer",
+    "ShareText": "Check out Luis Fletes' CV"
+  },
+  "SkillSetGroupsTitles": {
+    "ProfessionalSkills": "Pro Skills",
+    "DevelopmentTechs": "Development Technologies",
+    "Databases": "Databases",
+    "FrameworksLibraries": "Frameworks and libraries"
+  },
+  "EventSetGroupsTitles": {
+    "WorkExperience": "Work Experience",
+    "Education": "Education"
+  },
+  "SideContentTitles": {
+    "Profile": "Profile",
+    "SoftSkills": "Soft Skills",
+    "Languages": "Languages",
+    "Contact": "Contact"
+  },
+  "SideContent": {
+    "ProfileParagraph": "Persistent, perceptive, persevering, effective and efficient, self-taught, curious and always hungry to learn."
+  },
+  "SkillNames": {
+    "Networking": "Networking",
+    "Security": "Security",
+    "Leadership": "Leadership",
+    "Creativity": "Creativity",
+    "TeamWork": "Team Work",
+    "UnderPressureWork": "Under Pressure Work",
+    "Speech": "Speech",
+    "Spanish": "Spanish",
+    "English": "English",
+    "Italian": "Italian"
+  },
+  "EventNames": {
+    "TechnicalSupport": "Technical Support",
+    "Graduate": "Graduate",
+    "Course": "Course",
+    "SystemEngineer": "Systems Engineer"
+  },
+  "GeneralLabels": {
+    "Present": "Present"
+  },
+  "ContactLabels": {
+    "CallMe": "Call",
+    "SMS": "Send SMS",
+    "WhatsApp": "Send Whatsapp Message"
+  }
+}

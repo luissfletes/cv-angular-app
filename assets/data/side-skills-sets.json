@@ -1,0 +1,38 @@
+{
+  "softSkills": [
+    {
+      "i18nTitle": "Leadership",
+      "meter": 80
+    },
+    {
+      "i18nTitle": "Creativity",
+      "meter": 95
+    },
+    {
+      "i18nTitle": "TeamWork",
+      "meter": 90
+    },
+    {
+      "i18nTitle": "UnderPressureWork",
+      "meter": 80
+    },
+    {
+      "i18nTitle": "Speech",
+      "meter": 85
+    }
+  ],
+  "languages": [
+    {
+      "i18nTitle": "Spanish",
+      "meter": 100
+    },
+    {
+      "i18nTitle": "English",
+      "meter": 85
+    },
+    {
+      "i18nTitle": "Italian",
+      "meter": 60
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "workExperienceEvents": [
+    {
+      "i18nTitle": "TechnicalSupport",
+      "location": "Concesionaria de Ediciones S.A",
+      "duration": {
+        "start": "2014-06-01"
+      }
+    },
+    {
+      "title": "Fullstack Developer",
+      "location": "Nestrix Corporation",
+      "duration": {
+        "start": "2014-08-01",
+        "end": "2018-03-01"
+      }
+    },
+    {
+      "title": "Backend Developer",
+      "location": "RAIN Agency",
+      "duration": {
+        "start": "2018-03-01",
+        "end": "2018-09-01"
+      }
+    },
+    {
+      "title": "Frontend Developer",
+      "location": "OOQIA",
+      "duration": {
+        "start": "2018-09-01",
+        "end": "2019-03-01"
+      }
+    },
+    {
+      "title": "Fullstack developer",
+      "location": "Dotcreek",
+      "duration": {
+        "start": "2019-03-01",
+        "stillAt": true
+      }
+    }
+  ],
+  "educationEvents": [
+    {
+      "i18nTitle": "Graduate",
+      "location": "Instituto Pedagógico La Salle",
+      "duration": {
+        "start": "1999-01-01",
+        "end": "2010-11-01",
+        "dateFormat": "y"
+      }
+    },
+    {
+      "i18nTitle": "SystemEngineer",
+      "location": "Universidad Centroamericana",
+      "duration": {
+        "start": "2011-01-01",
+        "end": "2015-11-01",
+        "dateFormat": "y"
+      }
+    },
+    {
+      "i18nTitle": "Course",
+      "location": "Universidad Centroamericana",
+      "duration": {
+        "start": "2014-04-01"
+      }
+    }
+  ]
+}
