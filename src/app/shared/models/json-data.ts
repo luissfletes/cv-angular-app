@@ -21,4 +21,5 @@ export interface SideSkillsJsonData {
 export interface ContactJsonData {
   phone: string;
   email: string;
+  githubCodeUrl: string;
 }

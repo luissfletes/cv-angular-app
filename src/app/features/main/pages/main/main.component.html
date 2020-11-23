@@ -5,7 +5,7 @@
     <app-contact-info-container [contactData]="contactJsonData$ | async"></app-contact-info-container>
   </mat-sidenav>
   <mat-sidenav-content fxLayoutAlign="center" fxLayout="column" [style.marginRight.px]="0">
-    <app-toolbar-container (menuToggle)="sidenav.toggle()" (share)="share()"></app-toolbar-container>
+    <app-toolbar-container [contactData]="contactJsonData$ | async" (menuToggle)="sidenav.toggle()" (share)="share()"></app-toolbar-container>
     <div class="page-wrapper" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center" fxFlexAlign="center">
       <app-skills-container [skillsData]="skillsJsonData$ | async" [onMobile]="onMobile"></app-skills-container>
       <app-events-container [eventsData]="eventsJsonData$ | async" [onMobile]="onMobile"></app-events-container>

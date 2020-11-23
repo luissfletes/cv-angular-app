@@ -6,7 +6,10 @@
     <span translate="ProfileValues.Name" [style.marginRight.px]="10"></span>
     <span class="mat-caption" translate="ProfileValues.Role"></span>
   </div>
-  <button mat-icon-button (click)="share.emit()">
+  <a fxFlex="noshrink" mat-flat-button [href]="contactData.githubCodeUrl">
+    {{ 'ProfileValues.CheckoutCode' | translate }}
+  </a>
+  <button fxFlex="noshrink" mat-icon-button (click)="share.emit()">
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
