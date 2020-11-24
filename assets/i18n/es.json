@@ -44,7 +44,8 @@
     "SystemEngineer": "Ing. en Sistemas y Tecnologías de la Información"
   },
   "GeneralLabels": {
-    "Present": "Actualidad"
+    "Present": "Actualidad",
+    "Share": "Compartir"
   },
   "ContactLabels": {
     "CallMe": "Llamar",
