@@ -6,10 +6,14 @@
     <span translate="ProfileValues.Name" [style.marginRight.px]="10"></span>
     <span class="mat-caption" translate="ProfileValues.Role"></span>
   </div>
-  <a fxFlex="noshrink" mat-flat-button [href]="contactData.githubCodeUrl">
-    {{ 'ProfileValues.CheckoutCode' | translate }}
-  </a>
-  <button fxFlex="noshrink" mat-icon-button (click)="share.emit()">
-    <mat-icon>share</mat-icon>
+  <button mat-icon-button [matMenuTriggerFor]="optionsMenu">
+    <mat-icon>more_vert</mat-icon>
   </button>
+  <mat-menu #optionsMenu="matMenu">
+    <a [href]="contactData?.githubCodeUrl" mat-menu-item translate="ProfileValues.CheckoutCode"></a>
+    <button mat-menu-item (click)="share.emit()">
+      <mat-icon>share</mat-icon>
+      {{ 'GeneralLabels.Share' | translate }}
+    </button>
+  </mat-menu>
 </mat-toolbar>
